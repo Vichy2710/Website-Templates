@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    color:rgb(73, 69, 69);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 700px;
+    margin: 0px;
+    background-image: url(https://images.pexels.com/photos/250400/pexels-photo-250400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+}
+
+.main1{
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: white;
+}
+.place{
+    position: absolute;
+    margin-top: -10%;
+    display: flex;
+    flex-direction: row;
+    width: 112.5%;
+}
+.place-img{
+    width: 37%;
+    position: relative;
+}
+.place-img img{
+    width: 100%;
+}
+.place-img .img-text{
+    color: white;
+    position: absolute;
+    margin-top: -90%;
+    margin-left: 15%;
+    font-size: 25px;
+    line-height: 20px;
+}
+.place-img .img-text .line-after{
+    background-color: white;
+    margin-top: 2rem;
+    height: .1rem;
+    width: 6rem;
+}
+.experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30rem;
+}
+.exp-img{
+    width: 45%;
+    margin-bottom: -3.5px;
+}
+.exp-img img{
+    width: 100%;
+}
+.exp-text{
+    width: 45%;
+}
+.experience button{
+    width: 10rem;
+    height: 2.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+.exp-text{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.main2{
+    height: 600px;
+    background-image: linear-gradient(180deg,rgb(243, 235, 217),white);
+    display: flex;
+    flex-direction: column;
+}
+.main2-container{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+.adventure-box{
+    height: 200px;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+.more-place{
+    color: white;
+    background-color: rgb(214, 191, 156);
+    width: 50%;
+    box-shadow:  20px 30px 50px  2px rgb(161, 159, 159);
+}
+.more-place .text{
+    margin-left: 10%;
+    color: white;
+    margin-top: 5%;
+    line-height: 20px;
+}
+.adventure-list{
+    background-color: rgb(150, 141, 141);
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+
+}
+.adventure-place{
+    width: 20%;
+    line-height: 100px;
+    text-align: center;
+}
+.infor-adventure{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10%;
+    
+}
+.infor-box{
+    width: 25%;
+    margin: 10px;
+    margin-bottom: 35px;
+}
+
+.main3{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    margin-top: 15%;
+    margin-bottom: 10rem;
+}
+.main3 .title{
+    text-align: right;
+    line-height: 16px;
+}
+.friend-img{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.friend-img .img{
+    width: 25%;
+}
+.friend-img img{
+    width: 100%;
+}
+.friend-text{
+    text-align: right;
+    font-size: 17px; 
+    color:rgb(73, 69, 69);
+    margin-top: 3rem;
+    font-weight: 500;
+    margin-bottom:7rem;
+}
+.contact{
+    display: flex;
+    margin-right: 12rem;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.contact-title{
+    line-height: 55px;
+    font-weight: 500;
+}
+.contact-content{
+    line-height: 30px;
+    color: rgb(131, 122, 122);
+}
+.contact-content span{
+    word-spacing: 3rem;
+    margin-left: -1rem;
+    
+}
+.contact-content span a{
+    padding: 1rem;
+    color: rgb(73, 69, 69);
+}

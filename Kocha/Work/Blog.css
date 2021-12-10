@@ -1,0 +1,48 @@
+@import url(../BASE.css);
+
+.header{
+    margin-top: 6%;
+    text-align: left;
+    padding-bottom: 3%;
+    border-bottom:  1px solid rgba(0,0,0,.1);
+}
+.header-title{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.header-sub{
+    margin-top: 27px;
+    font-size: 30px;
+    line-height: 40px;
+}
+.list-item{
+    font-size: 30px;
+    line-height: 40px;
+    border-bottom:  1px solid rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    transition: 0.2s;
+}
+.list-item:hover{
+    border-bottom:  1px solid rgba(0,0,0,.6);
+    cursor: pointer;
+}
+.list-item .date{
+    width: 20%;
+}
+.list-item .content{
+    width: 70%;
+}
+.list-item .icon{
+    width: 10%;
+    text-align: right;
+}
+.list-item:hover{
+    cursor: pointer;
+}
+.end i:hover{
+    cursor: pointer;
+}

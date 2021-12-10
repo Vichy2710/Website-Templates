@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring</title>
+    <link rel="stylesheet" href="style.css">
+   <style>
+    body{
+        margin: 0;
+        padding: 0;
+        color:rgb(73, 69, 69);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .header{
+        width: 100%;
+        height: 700px;
+        margin: 0px;
+        background-image: url(https://images.pexels.com/photos/909654/pexels-photo-909654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .main1{
+        position: relative;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        background-color: white;
+    }
+    .place{
+        position: absolute;
+        margin-top: -10%;
+        display: flex;
+        flex-direction: row;
+        width: 112.5%;
+    }
+    .place-img{
+        width: 37%;
+        position: relative;
+    }
+    .place-img img{
+        width: 100%;
+    }
+    .place-img .img-text{
+        color: white;
+        position: absolute;
+        margin-top: -90%;
+        margin-left: 15%;
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .place-img .img-text .line-after{
+        background-color: white;
+        margin-top: 2rem;
+        height: .1rem;
+        width: 6rem;
+    }
+    .experience{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30rem;
+    }
+    .exp-img{
+        width: 45%;
+        margin-bottom: -3.5px;
+    }
+    .exp-img img{
+        width: 100%;
+    }
+    .exp-text{
+        width: 45%;
+    }
+    .experience button{
+        width: 10rem;
+        height: 2.2rem;
+        background-color: black;
+        color: white;
+        border: none;
+        margin-top: 20px;
+    }
+    .exp-text{
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    .main2{
+        height: 600px;
+        background-image: linear-gradient(180deg,rgb(243, 235, 217),white);
+        display: flex;
+        flex-direction: column;
+    }
+    .main2-container{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+    .adventure-box{
+        height: 200px;
+        width: 100%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .more-place{
+        color: white;
+        background-color: rgb(214, 191, 156);
+        width: 50%;
+        box-shadow:  20px 30px 50px  2px rgb(161, 159, 159);
+    }
+    .more-place .text{
+        margin-left: 10%;
+        color: white;
+        margin-top: 5%;
+        line-height: 20px;
+    }
+    .adventure-list{
+        background-color: rgb(150, 141, 141);
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: white;
+    
+    }
+    .adventure-place{
+        width: 20%;
+        line-height: 100px;
+        text-align: center;
+    }
+    .infor-adventure{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10%;
+        
+    }
+    .infor-box{
+        width: 25%;
+        margin: 10px;
+        margin-bottom: 35px;
+    }
+    
+    .main3{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        margin-top: 15%;
+        margin-bottom: 10rem;
+    }
+    .main3 .title{
+        text-align: right;
+        line-height: 16px;
+    }
+    .friend-img{
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .friend-img .img{
+        width: 25%;
+    }
+    .friend-img img{
+        width: 100%;
+    }
+    .friend-text{
+        text-align: right;
+        font-size: 17px; 
+        color:rgb(73, 69, 69);
+        margin-top: 3rem;
+        font-weight: 500;
+        margin-bottom:7rem;
+    }
+    .contact{
+        display: flex;
+        margin-right: 12rem;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .contact-title{
+        line-height: 55px;
+        font-weight: 500;
+    }
+    .contact-content{
+        line-height: 30px;
+        color: rgb(131, 122, 122);
+    }
+    .contact-content span{
+        word-spacing: 3rem;
+        margin-left: -1rem;
+        
+    }
+    .contact-content span a{
+        padding: 1rem;
+        color: rgb(73, 69, 69);
+    }
+    
+   </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+
+    <div class="main1">
+        <div class="place">
+            <div class="place-img">
+                <img src="https://images.pexels.com/photos/2072078/pexels-photo-2072078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ChiLe">
+                <div class="img-text">
+                    <p style="font-weight: 600;">CHILE</p>
+                    Breathtaking patagoria
+                    <div class="line-after">
+
+                    </div>
+                </div>
+            </div>
+            <div class="place-img">
+                <img src="https://images.unsplash.com/photo-1436377991866-f9af228d2b47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="ChiLe">
+                <div class="img-text">
+                    <p style="font-weight: 600;">SOUTH AFRICA</p>
+                    Breathtaking patagoria
+                    <div class="line-after">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="place-img">
+                <img src="https://images.pexels.com/photos/2437293/pexels-photo-2437293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ChiLe">
+                <div class="img-text">
+                    <p style="font-weight: 600;">CANADA</p>
+                    Breathtaking patagoria
+                    <div class="line-after">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="experience">
+            <div class="exp-img">
+                <img src="https://images.pexels.com/photos/816429/pexels-photo-816429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="experience">
+                
+            </div>
+            <div class="exp-text">
+                <p style="color: gray ;  margin-top:50px">SOUTH CHILE</p>
+                <P style="font-weight: 600; font-size:20px;margin-top:30px">Experience the wild</P>
+                <p style="margin-top:30px">CUSTOMER PRODUCING 1234</p>
+                <p>STARTING AT 2/6</p>
+                <p style="line-height: 25px; margin-top:30px">Nature is made of everything we see around us – trees, flowers, plants, animals, sky, mountains, forests and more. Human beings depend on nature to stay alive. Nature helps us breathe, gives us food, water, shelter, medicines, and clothes. We find many colors in nature which make the Earth beautiful.</p>
+                <button>Discover</button>
+            </div>   
+            
+        </div>
+        
+    </div>
+    <div class="main2">
+        <div class="main2-container">
+            <div class="adventure-box">
+                <div class="more-place">
+                    <div class="text">
+                        <p style="font-size: 15px;">Adventure is out there</p>
+                        <p style="font-size: 35px;">More place to discover</p>
+                    </div>
+                </div>
+                <div class="adventure-list">
+                    <div class="adventure-place"> Italy </div>
+                    <div class="adventure-place"> Norway </div>
+                    <div class="adventure-place"> Vietnam </div>
+                    <div class="adventure-place"> Thailand </div>
+                    <div class="adventure-place"> Australia </div>
+                    <div class="adventure-place"> USA </div>
+                    <div class="adventure-place" style="background-color: black;"> Switzerland </div>
+                    <div class="adventure-place"> India </div>
+                    <div class="adventure-place"> Spain </div>
+                    <div class="adventure-place"> Argentina </div>
+                </div>
+            </div>
+            <div class="infor-adventure">
+                <div class="infor-box">
+                    <p style="font-weight: 500;">Olsu</p>
+                    <p style="font-size: 14px; color:rgb(85, 79, 79);">The capital of Oslo is one of Europe's fastest-growing cities...</p>
+                </div>
+                <div class="infor-box">
+                    <p style="font-weight: 500;">Cali</p>
+                    <p style="font-size: 14px; color:rgb(85, 79, 79);">The capital of Oslo is one of Europe's fastest-growing cities...</p>
+                </div>
+                <div class="infor-box">
+                    <p style="font-weight: 500;">Tromso</p>
+                    <p style="font-size: 14px; color:rgb(85, 79, 79);">The capital of Oslo is one of Europe's fastest-growing cities...</p>
+                </div>
+                <div class="infor-box">
+                    <p style="font-weight: 500;">Olsu</p>
+                    <p style="font-size: 14px; color:rgb(85, 79, 79);">The capital of Oslo is one of Europe's fastest-growing cities...</p>
+                </div>
+                <div class="infor-box">
+                    <p style="font-weight: 500;">Bargen</p>
+                    <p style="font-size: 14px; color:rgb(85, 79, 79);">The capital of Oslo is one of Europe's fastest-growing cities...</p>
+                </div>
+                <div class="infor-box">
+                    <p style="font-weight: 500;">Stavenger</p>
+                    <p style="font-size: 14px; color:rgb(85, 79, 79);">The capital of Oslo is one of Europe's fastest-growing cities...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="title">
+            <p style="font-size: 14px; color:rgb(85, 79, 79);">COMMUNITY EXPRESSION</p>
+            <p style="font-size: 25px; color:rgb(49, 47, 47); font-weight: 500">From our friends</p>
+        </div>
+        <div class="friend-img">
+            <img class="img"src="https://images.pexels.com/photos/750536/pexels-photo-750536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <img class="img"src="https://images.pexels.com/photos/533978/pexels-photo-533978.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <img class="img"src="https://images.pexels.com/photos/3198193/pexels-photo-3198193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <img class="img"src="https://images.pexels.com/photos/4250986/pexels-photo-4250986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+        <div class="friend-text">
+            SEE OUR INSTAGRAM
+        </div>
+        <div class="contact">
+            <div class="contact-list">
+                <div class="contact-title">
+                    COMPANY
+                </div>
+                <div class="contact-content">
+                    Privacy policy <br>
+                    Term ans company <br>
+                    Project province <br>
+                    FACH <br>
+                    
+                </div>
+            </div>
+            <div class="contact-list">
+                <div class="contact-title">
+                    ABOUT
+                </div>
+                <div class="contact-content">
+                    Privacy policy <br>
+                    Term ans company <br>
+                    Project province <br>
+                    FACH <br>
+                    
+                </div>
+            </div>
+            <div class="contact-list">
+                <div class="contact-title">
+                    RESOURCES
+                </div>
+                <div class="contact-content">
+                    Privacy policy <br>
+                    Term ans company <br>
+                    Project province <br>
+                    FACH <br>
+                    
+                </div>
+            </div>
+            <div class="contact-list">
+                <div class="contact-title">
+                    CONTACT US
+                </div>
+                <div class="contact-content">
+                    Privacy policy <br>
+                    <p style="color: rgb(49, 45, 45);font-weight: 500; margin: 0; padding: 0">hello@gmail.com</p> 
+                     <br>
+                     <span>
+                       <a href=""> <i class="fab fa-facebook-f"></i></a>
+                       <a href=""> <i class="fab fa-instagram"></i></a>
+                       <a href=""> <i class="fab fa-tumblr"></i></a>
+                       <a href=""> <i class="fab fa-twitter"></i></a>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

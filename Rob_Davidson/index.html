@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romea-The personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:'Montserrat',sans-serif;
+            font-weight: 400;
+            background-color: #ebebeb;
+        }
+        .container{
+            width: 80%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .hello{
+            
+            background-color: black;
+            width: 100%;
+            height: 650px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .hello-text{
+            padding-top: 20px;
+            width: 30%;
+            color: white;
+        }
+        .hello-box{
+            margin-top: 55px;
+            border: white solid 3px;
+            border-radius: 50px;
+            text-align: center;
+            width: 70%;
+            height: 3rem;
+            line-height: 3rem;
+            letter-spacing: 10px;
+            
+        }
+        .hello-img{
+            width: 38%;
+            margin-top: 6rem; 
+        }
+        .hello-img img{
+            width: 100%;
+            max-height: 42rem;
+        }
+        .education,.experience,.blog,
+        .cover-letter,.testimonial,.contact,
+        .about{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+        .experience-title,.blog-title,
+        .letter-title,.testimonial-title,
+        .contact-title,
+        .about-title{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+        .about-content{
+            width: 35%;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        .blog-box,
+        .design-and-code{
+            display: flex;
+            flex-direction: row;
+            margin-top: 70px;
+            justify-content: space-between;
+        }
+        .box1,
+        .design{
+            width: 40%;
+            
+        }
+        .design-title{
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .box1-sub,
+        .design-sub{
+            font-style: italic;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+        .box1-content,
+        .design-content{
+            font-weight: 400;
+            line-height: 30px;
+        }
+        .design-box{
+            margin-top: 55px;
+            border: white solid 2px;
+            border-radius: 50px;
+            text-align: center;
+            width: 50%;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            letter-spacing: 7px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .number {
+            position: relative;
+            margin-top: 40px;
+            background-image: linear-gradient(white, rgb(182, 181, 181), gray);
+            height: 150px;
+            width: 151px;
+            border-radius: 50%;
+        }
+        
+        .number-nav {
+            position: absolute;
+            top: -5px;
+            left: 48px;
+            font-size: 185px;
+            font-family: "Nova Round",Sans-serif;
+            background-image: linear-gradient(black, rgb(27, 27, 27) 46%, rgb(190, 190, 190) 77%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .skills,
+        .portfolio{
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 100px;
+            display: flex;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        
+        }
+        .portfolio-left{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+        .skills-title,
+        .portfolio-title{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 35px;
+            color: white;
+            
+        }
+        .skills-content,
+        .portfolio-content{
+            font-weight: 400;
+            line-height: 30px;
+            color: white;
+        }
+        .portfolio-list{
+            margin-top: 30px;
+        }
+        .portfolio-list li{
+            line-height: 100px;
+            font-weight: 500;
+            font-size: 25px;
+            text-indent: 10px;
+            border-bottom: solid 2px #ccc ;
+            list-style: none;
+            padding-left: 10px;
+        }
+        .portfolio-right{
+            width: 40%;
+            position: relative;
+            margin-top: -13%;
+        }
+        .portfolio-right img{
+            width: 100%;
+        }
+        .insert-img{
+            position: absolute;
+            margin-left: -30%;
+            margin-top: -60%;
+        }
+        .insert-img img{
+        }
+        .list-year{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 1300px;
+            justify-content: space-between;
+            margin-top: 5%;
+            margin-right: 10%;
+        
+        }
+        .year-box{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-right: 20%;
+        }
+        .list-year .year{
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        
+        }
+        .list-year .content{
+            line-height: 30px;
+        }
+        .content-web{
+            font-weight: 600;
+            background-color: rgb(162, 218, 253);
+            position:relative;
+            width: 16rem;
+            height: 0.5rem;
+            margin-top: 1rem;
+        }
+        .content-web-text{
+            position: absolute;
+            margin-left: 0.5%;
+            margin-top: -5%;
+        }
+        .year-border{
+            height:3rem;
+            margin-left: 2%;
+            border-left: solid black 3px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        .chart{
+            display: flex;
+            flex-direction: column;
+            margin-top: 8%;
+            width: 100%;
+        }
+        .skills-chart{
+            margin-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .skills .chart-line{
+            background-color: #545454;
+            height: 0.2rem;
+            width: 90%;
+            margin-top: 5%;
+            position: relative;
+            
+            
+        }
+        .chart-display-mask{
+            position: absolute;
+            background-color: black;
+            height: 4.5rem;
+            background-clip: content-box;
+            margin-top: -4%; 
+            
+        }
+        .chart-display{
+            position: absolute;
+            background-color: white;
+            padding: ;
+            height: 4.5rem;
+            margin-top: -4%; 
+            letter-spacing: 4px;
+            font-weight: 500;
+            color: black;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 4.5rem;
+            padding-left: 7%;
+            box-sizing: border-box;
+        }
+        .chart-value{
+            color: white;
+            margin-left: 3%;
+            margin-top: 2%;
+            font-size: 25px;
+            line-height: 4.5rem;
+        }
+        .experience-table{
+            margin-top: 10%;
+        }
+        .experience-table table{
+            text-align: left;
+            width: 85%;
+            line-height: 4rem;
+            
+            
+        }
+        
+        .experience-table table th{
+            color: rgb(163, 162, 162);
+            border-bottom: 1px solid  rgb(163, 162, 162) ;
+        }
+        .experience-table table td{
+            border-bottom: 1px solid  rgb(163, 162, 162) ;
+        }
+        .brands{
+            width: 100%;
+            margin-top: 5%;
+        }
+        .brands img{
+            width: 100%;
+        }
+        .box1-sub a{
+            text-decoration: none;
+            font-style: normal;
+            font-size: 20px;
+            color: black;
+        }
+        .box1-sub:hover a{
+            transition: 0.2s;
+            color: rgb(77, 165, 165);
+        }
+        .box1-img{
+            width: 100%;
+            height: 260px;
+            margin-bottom: 10%;
+            display: block;
+            box-sizing: border-box;
+            overflow: hidden;
+            
+        }
+        .box1-img:hover {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .box1-img:hover img{
+            transition: 0.5s;
+            transform: scale(1.2)
+        }
+        .box1-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .analyst{
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding:  10% ;
+            box-sizing: border-box;
+            padding-top: 7%;
+            padding-bottom: 7%;
+        }
+        .analyst-text{
+            width: 70%;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 50px;
+        }
+        .analyst-num{
+            display:flex ;
+            flex-direction: row;
+            margin-top: 7%;
+            margin-right: 25%;
+            justify-content: space-between;
+        }
+        .li-num .num{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 45px;
+            margin: 0;
+            
+        }
+        .li-num .num{
+            font-weight: 600;
+            line-height: 20px;
+        }
+        .cover-letter{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .letter-left{
+            width: 45%;
+        }
+        .letter-sub{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+        .letter-content{
+            margin-top: 3%;
+            line-height: 30px;
+        }
+        .letter-content span{
+            border-bottom: 4px solid rgb(96, 188, 211);
+            font-weight: 600;
+        }
+        .letter-right{
+            vertical-align: center;
+        }
+        .letter-right img{
+            
+        }
+        .letter-img p{
+            font-style: italic;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .video{
+            width: 100%;
+        }
+        .video iframe{
+            width: 100%;
+        }
+        
+        .testimonial-content{
+            margin-top: 3%;
+            overflow-x: scroll;
+            width: 95%;
+            scrollbar-width: 2px;
+        }
+        .testimonial-content::-webkit-scrollbar {
+            width: 2px;
+        }
+        .testimonial-content::-webkit-scrollbar-track{
+            background-color: rgb(177, 173, 173);
+        }
+        .testimonial-content::-webkit-scrollbar-thumb{
+            background-color: rgb(59, 55, 55);
+            
+        }
+        .testimonial-content::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(37, 37, 37);
+        }
+        .testimonial-content .t-container{
+            width: 2000px;
+            display: flex;
+            flex-direction: row;
+        }
+        .testimonial-box{
+            width: 23%;
+            display: block;
+            margin-right:7%;
+            margin-bottom: 3%;
+        }
+        .testimonial-box .icon{
+            font-size: 120px;
+            margin-top: 14%;
+            line-height: 80px;
+        }
+        .testimonial-box .text{
+            line-height: 30px;
+        }
+        .testimonial .img{
+            width: 30%;
+            margin-top: 20%;
+        }
+        .testimonial img{
+            border-radius: 50%;
+            width: 100%;
+        }
+        .testimonial .name p{
+            font-size: 15px;
+            line-height: 14px;
+        }
+        .download{
+            width: 100%;
+            background-color: black;
+            color: white;
+            height: 370px;
+            box-sizing: border-box;
+            padding: 10%;
+            text-align:center ;
+        }
+        .download-line{
+            font-weight: 600;
+            background-color: rgb(162, 218, 253);
+            position:relative;
+            width: 25.5rem;
+            height: 1.5rem;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        .download-line:hover{
+            margin-top: 3%;
+            transition: 0.5s ease-out;
+        }
+        .download-line:hover .download-text{
+            margin-top: -12%;
+        }
+        .download-text{
+            position: absolute;
+            margin-left: 0.5%;
+            margin-top: -10.6%;
+            font-size: 60px; 
+        }
+        .download-content{
+            margin-top: 7%;
+            width: 40%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            line-height: 30px;
+            font-size: 18px;
+        }
+        .contact-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .contact-left{
+            width: 37%;
+        }
+        .contact-sub{
+            margin-top: 20%;
+            margin-bottom: 20%;
+            font-size: 22px;
+            line-height: 35px;
+            font-weight: 600;
+        }
+        
+        .contact-box span{
+            font-weight: 600;
+        }
+        .contact-right{
+            width: 50%;
+            margin-top: -15px;
+        }
+        .contact-input{
+            margin-bottom: 30px;
+        }
+        .contact-input input
+        {
+            width: 100%;
+            font-size: 18px;
+            height: 2rem;
+            outline: none;
+            border: none;
+            border-bottom: 3px solid black;
+            margin: 0;
+            padding: 0;
+        
+        }
+        .contact-input p{
+            margin: 0;
+            padding: 0;
+            margin-bottom: 2px;
+        }
+        .contact-input textarea{
+            font-size: 18px;
+            border: none;
+            border-bottom: 3px solid black;
+            outline: none;
+        }
+        
+        .footer{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .footer .text{
+            margin-left: -100px;
+        }
+        .CocoBasic-text,
+        .CocoBasic{
+            font-weight: 600;
+            background-color: rgb(162, 218, 253);
+            position:relative;
+            width: 92px;
+            height: 5px;
+            margin-left:62%;
+            margin-top: -22px;
+            position: absolute;
+            z-index: 0;
+        }
+        .CocoBasic-text{
+            margin-top: -35px;
+            background-color: transparent;
+        }
+        .footer-icon{
+            word-spacing: 17px;
+            font-size: 27px;
+            color: rgb(145, 140, 140);
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hello">
+            <div class="hello-text">
+                <p style="font-size: 80px; font-weight: 500; margin-bottom: 50px; line-height:85px">
+                    Hello <br>
+                    I'm Rob <br>
+                    Davidson
+                </p>
+                <p style="font-size: 16px; width:80% ; line-height:30px">
+                    A full stack allaround <span style="font-style: italic;font-weight:600">designer <br></span> that
+                    placerat in massa consectetur
+                </p>
+                <div class="hello-box">
+                    DOWNLOAD CV
+                </div>
+            </div>
+            <div class="hello-img">
+                <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/profile_image.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about-title">
+                About
+            </div>
+            <div class="about-content">
+                A full stack allaround designer that tristique est placerat in massa <span
+                    style="font-weight:600;">consectetur quisque</span> lobortis vitae faucibus diam
+            </div>
+            <div class="design-and-code">
+                <div class="design">
+                    <div class="design-title">Design</div>
+                    <!-- <div class="design-img">
+                        <img src="./1.jpg" alt="">
+                    </div> -->
+                    <div class="number">
+                        <div class="number-nav">
+                            1
+                        </div>
+                    </div>
+                    <div class="design-sub">
+                        Dolor sit amet, consectetur adipiscing elit viverra tristique
+                    </div>
+                    <div class="design-content">
+                        Faucibus sed tristique fames sed aliquet ultr eget viverra arcu. Vitae faucibus diam polo
+                        consequat maecenas. Turpis metus sit diam purus leo in varius ac quam nunc amet lorem.
+                    </div>
+                    <div class="design-box" style="border-color: black;">
+                        LEARN MORE
+                    </div>
+                </div>
+                <div class="design">
+                    <div class="design-title">Code</div>
+                    <!-- <div class="design-img" >
+                        <img src="./2.jpg" alt="">
+                    </div> -->
+                    <div class="number">
+                        <div class="number-nav">
+                            2
+                        </div>
+                    </div>
+                    <div class="design-sub" style="margin-top: 26px;">
+                        Lorem consectetur adipiscing elit viverra tristique donec est setera </div>
+                    <div class="design-content">
+                        Tristique fames sed aliquet ultricies eget viverra arcu mous faucibus diam consequat maecenas it
+                        diam purus leo in varius ac quam nunc amet tristique volutpat adipiscing polis. </div>
+                    <div class="design-box" style="border-color: black;">
+                        LEARN MORE
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <div class="portfolio-left">
+                <div class="portfolio-title">Portfolio</div>
+                <div class="portfolio-content">
+                    A full stack allaround designer that tristique est placerat in massa <span
+                        style="font-weight:600;">consectetur quisque</span> lobortis
+                    vitae faucibus diam
+                </div>
+                <div class="portfolio-list">
+
+                    <li>01. Parallax</li>
+                    <li>02. Grid</li>
+                    <li>03. Video</li>
+                    <li>04. Slider</li>
+
+                </div>
+            </div>
+            <div class="portfolio-right">
+                <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/p_item3.jpg" alt="">
+                <div class="insert-img">
+                    <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/p_item1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="education">
+            <div class="about-title">
+                Education
+            </div>
+            <div class="about-content">
+                A full stack allaround designer that tristique est placerat in massa <span
+                    style="font-weight: 600;">consectetur quisque</span> lobortis vitae faucibus diam
+            </div>
+            <div class="list-year">
+                <div class="year-box">
+                    <div class="year">2015-2016</div>
+                    <div class="content">Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                        faucibus diam consequat.</div>
+                    <div class="content-web">
+                        <div class="content-web-text">www.siteexamplehee.com</div>
+                    </div>
+                    <div class="year-border">
+
+                    </div>
+                </div>
+                <div class="year-box">
+                    <div class="year">2016-2017</div>
+                    <div class="content">Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                        faucibus diam consequat.</div>
+                    <div class="content-web">
+                        <div class="content-web-text">www.siteexamplehee.com</div>
+                    </div>
+                    <div class="year-border">
+
+                    </div>
+                </div>
+                <div class="year-box">
+                    <div class="year">2017-2018</div>
+                    <div class="content">Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                        faucibus diam consequat.</div>
+                    <div class="content-web">
+                        <div class="content-web-text">www.siteexamplehee.com</div>
+                    </div>
+                    <div class="year-border">
+
+                    </div>
+                </div>
+                <div class="year-box">
+                    <div class="year">2018-2019</div>
+                    <div class="content">Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                        faucibus diam consequat.</div>
+                    <div class="content-web">
+                        <div class="content-web-text">www.siteexamplehee.com</div>
+                    </div>
+                    <div class="year-border">
+
+                    </div>
+                </div>
+                <div class="year-box">
+                    <div class="year">2019-2020</div>
+                    <div class="content">Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                        faucibus diam consequat.</div>
+                    <div class="content-web">
+                        <div class="content-web-text">www.siteexamplehee.com</div>
+                    </div>
+                    <div class="year-border">
+
+                    </div>
+                </div>
+                <div class="year-box">
+                    <div class="year">2020-2021</div>
+                    <div class="content">Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu vitae
+                        faucibus diam consequat.</div>
+                    <div class="content-web">
+                        <div class="content-web-text">www.siteexamplehee.com</div>
+                    </div>
+                    <div class="year-border">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills" style="flex-direction: column;">
+            <div class="skills-title">Skills</div>
+            <div class="skills-content" style="width:40%">
+                A full stack allaround designer that tristique est placerat in massa <span
+                    style="font-weight: 600;">consectetur quisque</span> lobortis vitae faucibus diam
+            </div>
+            <div class="chart">
+                <div class="skills-chart">
+                    <div class="chart-line">
+                        <div class="chart-display-mask" style="width:72%">
+                            <!-- width char-display+5 -->
+                        </div>
+                        <div class="chart-display" style="width:67%">
+                            PHOTOSHOP
+                        </div>
+                    </div>
+                    <div class="chart-value">
+                        67%
+                    </div>
+                </div>
+                <div class="skills-chart">
+                    <div class="chart-line">
+                        <div class="chart-display-mask" style="width:35%">
+                            <!-- width char-display+5 -->
+                        </div>
+                        <div class="chart-display" style="width:30%">
+                            HTML / CSS
+                        </div>
+                    </div>
+                    <div class="chart-value">
+                        30%
+                    </div>
+                </div>
+                <div class="skills-chart">
+                    <div class="chart-line">
+                        <div class="chart-display-mask" style="width:78%">
+                            <!-- width char-display+5 -->
+                        </div>
+                        <div class="chart-display" style="width:100%">
+                            AFFINITY DESIGNER
+                        </div>
+                    </div>
+                    <div class="chart-value">
+                        100%
+                    </div>
+                </div>
+                <div class="skills-chart">
+                    <div class="chart-line">
+                        <div class="chart-display-mask" style="width:94%">
+                            <!-- width char-display+5 -->
+                        </div>
+                        <div class="chart-display" style="width:89%">
+                            DIGITAL PAINTING
+                        </div>
+                    </div>
+                    <div class="chart-value">
+                        89%
+                    </div>
+                </div>
+                <div class="skills-chart">
+                    <div class="chart-line">
+                        <div class="chart-display-mask" style="width:75%">
+                            <!-- width char-display+5 -->
+                        </div>
+                        <div class="chart-display" style="width:70%">
+                            SUPER MARIO
+                        </div>
+                    </div>
+                    <div class="chart-value">
+                        25%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="experience-title">
+                Experience
+            </div>
+            <div class="about-content">
+                A full stack allaround designer that tristique est placerat in massa <span
+                    style="font-weight: 600;">consectetur quisque</span> lobortis vitae faucibus diam
+            </div>
+            <div class="experience-table">
+                <table cellspacing='0'>
+                    <tr>
+                        <th>COMPANY</th>
+                        <th>POSITION</th>
+                        <th>YEAR</th>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: 600;">Massa Fames</span> / New York</td>
+                        <td>Junior Developer</td>
+                        <td style="font-weight: 600;">2016</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: 600;">Lobrissa </span> / Chicago</td>
+                        <td>Junior Developer</td>
+                        <td style="font-weight: 600;">2016</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: 600;">Faucibuse </span> / Seattle</td>
+                        <td>Junior Developer</td>
+                        <td style="font-weight: 600;">2016</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: 600;">Vivera Arcu</span> / Seattle</td>
+                        <td>PhP Developer</td>
+                        <td style="font-weight: 600;">2017</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: 600;">Ultricies Esta</span> / Denver</td>
+                        <td>C++ Developer</td>
+                        <td style="font-weight: 600;">2018</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: 600;">Diam Quam</span> / San Francisco</td>
+                        <td>Senior Developer</td>
+                        <td style="font-weight: 600;">2019</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: 600;">Ercusa </span> / San Francisco</td>
+                        <td>Senior Developer</td>
+                        <td style="font-weight: 600;">2020</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: 600;">Reesturato</span> / New York</td>
+                        <td>CEO</td>
+                        <td style="font-weight: 600;">2021</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="brands">
+            <img src="./brands.jpg" alt="brands">
+        </div>
+
+        <div class="blog">
+            <div class="blog-title">Blog</div>
+            <div class="about-content">
+                A full stack allaround designer that tristique est placerat in massa <span
+                    style="font-weight:600;">consectetur quisque</span> lobortis vitae faucibus diam
+            </div>
+            <div class="blog-box">
+                <div class="box1">
+                    <div class="box1-img">
+                        <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2019/11/blog_01.jpg"
+                            alt="">
+                    </div>
+                    <div class="box1-sub">
+                        <a href="#">Hundreds of thousands a still more glorious nights around art table</a>
+                    </div>
+                    <div class="box1-content">
+                        Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic
+                        ocean paroxysm of global death rich in heavy atoms ...
+                    </div>
+                    <div class="design-box" style="border-color: black;">
+                        READ MORE
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="box1-img">
+                        <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2019/11/blog_02.jpg"
+                            alt="">
+                    </div>
+                    <div class="box1-sub">
+                        <a href="#">Preserve and cherish that pale blue dot are creatures of the cosmos light years</a>
+                    </div>
+                    <div class="box1-content">
+                        Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic
+                        ocean paroxysm of global death rich in heavy atoms ...
+                    </div>
+                    <div class="design-box" style="border-color: black;">
+                        READ MORE
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="analyst">
+            <div class="analyst-text">
+                Aliquet ultricies eget viverra arcu vitae faucibus diam consequat maecenas lorem ispum dolor sit amet
+                nunc
+            </div>
+            <div class="analyst-num">
+                <div class="li-num">
+                    <p class="num">52k</p>
+                    <p class="text">Hours</p>
+                </div>
+                <div class="li-num">
+                    <p class="num">1.7k+</p>
+                    <p class="text">Coffee</p>
+                </div>
+                <div class="li-num">
+                    <p class="num">95+</p>
+                    <p class="text">Connections</p>
+                </div>
+                <div class="li-num">
+                    <p class="num">7</p>
+                    <p class="text">Projects</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cover-letter">
+            <div class="letter-left">
+                <div class="letter-title">
+                    Cover letter
+                </div>
+                <div class="letter-sub">
+                    Dolor sit amet, consectetur adipiscing elit viverra tristique
+                </div>
+                <div class="letter-content">
+                    <p>Faucibus sed tristique fames sed aliquet ultricies eget viverra arcu. Vitae faucibus diam
+                        consequat maecenas. Turpis metus sit diam purus leo in varius ac quam nunc amet tristique
+                        volutpat adipiscing. Morbi malesuada arcu egestas dolor blandit ultricies in at diam. Maecenas
+                        eget nisi vel nisl <span>sollicitudin</span> porta aliquet vel leo. Sed feugiat soda les nulla.
+                        In consequat nisl sem, in aliquam libero tempor nec. Maecenas sit amet felis sed justo aliquam
+                        vulputate tempor ut orci. Suspendisse interdum velit tortor, a semper ex posuere quis. Morbi
+                        velit nulla, lobortis ac ipsum et, accumsan convallis odio. Proin turpis leo, hendrerit a lacus
+                        sed, porta placerat diam. Aliquam vitae magna et libero auctor lobortis non ac risus. Vivamus
+                        lacus tellus, pharetra ut vulputate sed, auctor sed ex. Nulla volutpat nisi et neque pulvinar
+                        luctus cras semper ipsum moronos textures asonius.</p>
+                    <p>Mauris nibh libero, vulputate in mi sed, pharetra pharetra purus. Morbi ultricies nisl diam,
+                        acare pharetra purus <span>fermentum</span> congue. Etiam inta suscipit lorem. Nullam molestie
+                        urna eget exat malesuada feugiat. Nam aliquet facilisis ipsum, at tincidunt dolor sagittis sit
+                        amet lorem.</p>
+                </div>
+            </div>
+            <div class="letter-right">
+                <div class="letter-img">
+                    <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/cover.jpg" alt="">
+                    <p>Robert Dygen</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7uoZSm3LbrA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-title">Testimonial</div>
+            <div class="about-content">
+                A full stack allaround designer that tristique est placerat in massa <span
+                    style="font-weight: 600;">consectetur quisque</span> lobortis vitae faucibus diam
+            </div>
+            <div class="testimonial-content">
+                <div class="t-container">
+                    <div class="testimonial-box">
+                        <div class="icon">"</div>
+                        <div class="text">
+                            Rob Davidson is daucibus sed tristiqua fames sed aliquet ultricies eget viverra arcu vitae
+                            faucibus diam consequat maecenas turpis metus sit diam purus leo in varius.
+                        </div>
+                        <div class="img">
+                            <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/quote_01.jpg"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <p style="font-weight: 600;">Janny Stone</p>
+                            <p style="letter-spacing: 5px;">CEO</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="icon">"</div>
+                        <div class="text">
+                            Rob Davidson is daucibus sed tristiqua fames sed aliquet ultricies eget viverra arcu vitae
+                            faucibus diam consequat maecenas turpis metus sit diam purus leo in varius.
+                        </div>
+                        <div class="img">
+                            <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/quote_01.jpg"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <p style="font-weight: 600;">Janny Stone</p>
+                            <p style="letter-spacing: 5px;">CEO</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="icon">"</div>
+                        <div class="text">
+                            Rob Davidson is daucibus sed tristiqua fames sed aliquet ultricies eget viverra arcu vitae
+                            faucibus diam consequat maecenas turpis metus sit diam purus leo in varius.
+                        </div>
+                        <div class="img">
+                            <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/quote_01.jpg"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <p style="font-weight: 600;">Janny Stone</p>
+                            <p style="letter-spacing: 5px;">CEO</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="icon">"</div>
+                        <div class="text">
+                            Rob Davidson is daucibus sed tristiqua fames sed aliquet ultricies eget viverra arcu vitae
+                            faucibus diam consequat maecenas turpis metus sit diam purus leo in varius.
+                        </div>
+                        <div class="img">
+                            <img src="https://demo.cocobasic.com/romea-wp/demo-1/wp-content/uploads/2020/09/quote_01.jpg"
+                                alt="">
+                        </div>
+                        <div class="name">
+                            <p style="font-weight: 600;">Janny Stone</p>
+                            <p style="letter-spacing: 5px;">CEO</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="download">
+            <div class="download-line">
+                <div class="download-text">Download CV</div>
+            </div>
+            <div class="download-content">
+                PDF aliquet ultricies eget viverra arcu vitae faucibus diam co lorem ispum dolor sed est
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="contact-title">Contact</div>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <div class="about-content" style="width: 100%">
+                        A full stack allaround designer that tristique est placerat in massa <span
+                            style="font-weight: 600;">consectetur quisque</span> lobortis vitae faucibus diam
+                    </div>
+                    <div class="contact-sub">
+                        Dolor sit amet, consectetur adipiscing elit viverra tristique
+                    </div>
+                    <div style="margin-bottom: 4%"><span>Name: </span>Rob Davidson</div>
+                    <div style="margin-bottom: 4%"><span>Address: </span> New York, USA</div>
+                    <div style="margin-bottom: 4%"><span>Phone: </span>+1 234-567-890</div>
+                    <div style="margin-bottom: 4%"><span>Hours: </span>6:00 am – 2:00 am</div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-input">
+                        <p>Name</p>
+                        <input type="text">
+                    </div>
+                    <div class="contact-input">
+                        <p>Email</p>
+                        <input type="text">
+                    </div>
+                    <div class="contact-input">
+                        <p>Subject</p>
+                        <input type="text">
+                    </div>
+                    <div class="contact-input">
+                        <p>Message</p>
+                        <textarea name="Message" cols="51" rows="7"></textarea>
+                    </div>
+                    <div class="design-box" style="border-color: black; width:14rem">
+                        SEND MASSAGE
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="text">
+            <p>© 2020 Romea WordPress Theme by <span>
+                    <div class="CocoBasic"></div>
+                </span></p>
+            <div class="CocoBasic-text">CocoBasic</div>
+        </div>
+        <div class="footer-icon">
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-facebook-square"></i></span>
+            <span><i class="fab fa-dribbble"></i></span>
+            <span><i class="fas fa-rss"></i></span>
+        </div>
+    </div>
+</body>
+
+</html>

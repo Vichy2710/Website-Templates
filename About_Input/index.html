@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-cubes"></i> &#160;
+            <div class="logo-text">
+                <p style="font-weight: 600; font-size:25px; margin: 0"> FFC: Survey form</p>
+                <p style="font-weight: 300; font-size:20px; margin: 0; color: rgb(185, 174, 174)"> freeCodeCamp.org</p>
+            </div>
+        </div>
+        <div class="header-option">
+            <a href="#" class="opt-button">&#9829;</a>
+            <a href="#" class="opt-button">View in Editor</a>
+            <a href="#" class="opt-button" style="color: black;background-color: rgb(70, 224, 122);">Sign up</a>
+            <a href="#" class="opt-button">Log in</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-heading">
+            <h1>
+                freeCodeCamp Survey Form
+            </h1>
+            <p style="font-style:italic">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </div>
+        <br>
+        <div class="container">
+            <div class="intro">
+                <p class="container-p">Name</p>
+                <input type="text" placeholder="&#160;Enter your name">
+                <p class="container-p">Email</p>
+                <input type="text" placeholder="&#160;Enter your email">
+                <p class="container-p">Age</p>
+                <input type="text" placeholder="&#160;Age">
+                <p class="container-p">Which option best describes your current role?</p>
+                <input type="text" placeholder="&#160;Select current role">
+            </div>
+
+            <div class="radio-friend">
+                <p class="container-p">
+                    Would you recommend freeCodeCamp to a friend?
+                </p>
+                <input type="radio" name="friend" value="Definitely">Definitely <br>
+                <input type="radio" name="friend" value="Maybe">Maybe <br>
+                <input type="radio" name="friend" value="Not sure">Not sure <br>
+            </div>
+            <br>
+            <div class="favorite-feature">
+                <p class="container-p">What is your favorite feature of freeCodeCamp?</p>
+                <select name="Select current role" id="feature">
+                    <option value="Student">Student</option>
+                    <option value="Full time job">Full time job</option>
+                    <option value="Full time learner">Full time learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div class="improved">
+                <div class="p">
+                    <p class="container-p ">What would you like to see improved?&#160;</p>
+                    <p style="font-size: smaller; color: white">(Check all that apply)</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="Front-end Projects" value="improved">Front-end Projects <br>
+                    <input type="checkbox" name="Back-end Projects" value="improved">Back-end Projects <br>
+                    <input type="checkbox" name="Data Visualization" value="improved">Data Visualization <br>
+                    <input type="checkbox" name="Challenges" value="improved">Challenges <br>
+                    <input type="checkbox" name="Open Source Community" value="improved">Open Source Community <br>
+                    <input type="checkbox" name="Gitter help rooms" value="improved">Gitter help rooms <br>
+                    <input type="checkbox" name="Videos" value="improved">Videos <br>
+                    <input type="checkbox" name="City Meetups" value="improved">City Meetups <br>
+                    <input type="checkbox" name="Wiki" value="improved">Wiki <br>
+                    <input type="checkbox" name="Forum" value="improved">Forum <br>
+                    <input type="checkbox" name="Additional Courses" value="improved">Additional Courses <br>
+                </div>
+            </div>
+            <br>
+            <div class="comment">
+                <div class="container-p">
+                    Any comments or suggestions?
+                </div>
+                <textarea name="" id="" cols="98" rows="10" placeholder="Enter your comment here..."></textarea>
+
+            </div>
+            <br>
+            <div class="submit">
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+        
+</body>
+
+</html>

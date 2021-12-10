@@ -1,0 +1,136 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1517946487903-5430c839d98a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+::selection{
+    background-color: #927474;
+}
+.header{
+    background-color: black;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 65px;
+    width: 100%;
+    color: white;
+    
+}
+.header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+}
+.logo .logo-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: center;
+}
+.header-option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 30px;
+    padding-right: 15px;
+    height: 40px;
+    margin: auto;
+    margin-right: 0;
+}
+.opt-button{
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: dimgray;
+}
+
+.main{
+    margin-bottom: 4rem;
+}
+.main-heading{
+    text-align: center;
+    margin-top: 100px;
+    line-height: 15px;
+}
+.container{
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    width: 50%;
+    padding: 30px;
+}
+.container .intro{
+    display: flex;
+    flex-direction: column;
+
+}
+.container-p{
+    color: white;
+    font-size: large;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+}
+.intro input{
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+.radio-friend{
+    color: white;
+    font-size: large;
+    line-height: 32px;
+}
+
+.favorite-feature select{
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    color:rgb(112, 105, 105);
+    font-size: 15px;
+    
+}
+
+.improved{
+    
+}
+.improved .p{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.improved .checkbox{
+    color: white;
+    line-height: 30px;
+    
+}
+
+.comment textarea{
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+.submit button{
+    background-color: rgb(66, 184, 66);
+    color: white;
+    width: 100%;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+}
+img{
+    width: 10rem;
+    
+}
